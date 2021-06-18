@@ -657,30 +657,63 @@ body {
 }
 
 @media screen and (min-width: 480px) {
+  .project {
+    display: block;
+    align-items: center;
+  }
   .priorities-items {
+    margin-bottom: 30px;
+  }
+  .our-priorities-list-icon {
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .our-priorities-icons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f4fa;
+    width: 450px;
+    height: 120px;
+    border-radius: 4px;
     margin-bottom: 30px;
   }
 }
 
-.our-priorities-icons-container {
-  display: block;
-  align-items: center;
-  justify-content: center;
-  background-color: #f5f4fa;
-  width: 450px;
-  height: 120px;
-  border-radius: 4px;
-  margin-bottom: 30px;
+@media screen and (min-width: 768px) {
+  .priorities-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .project {
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  .priorities-items {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  .our-priorities-list-icon {
+    display: flex;
+  }
+  .our-priorities-icons-container {
+    width: 354px;
+  }
 }
 
-.our-priorities-list-icon {
-  display: block;
+/* .our-priorities-list-icon {
+  display: flex;
   width: 70px;
   height: 70px;
   margin-right: auto;
   margin-left: auto;
-}
-
+} */
 @media screen and (min-width: 1200px) {
   .priorities-items {
     margin-bottom: 0;
@@ -688,16 +721,32 @@ body {
   .priorities-items:not(:last-child) {
     margin-right: 30px;
   }
+  .our-priorities-icons-container {
+    width: 270px;
+  }
+  .our-priorities-list-icon {
+    display: flex;
+  }
 }
 
-.project {
+/* .project {
   display: block;
   align-items: center;
+} */
+/*.priorities-items:not(:last-child) {
+  margin-right: 30px;
 }
 
-/* .priorities-items:not(:last-child) {
-  margin-right: 30px;
-} */
+.our-priorities-icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f4fa;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}*/
 .work-section {
   padding-bottom: 94px;
 }

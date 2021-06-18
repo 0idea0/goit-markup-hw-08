@@ -22,6 +22,11 @@
 
 //480+
 @media screen and (min-width: 480px) {
+  .project {
+    display: block;
+    align-items: center;
+  }
+
   .priorities-items {
     margin-bottom: 30px;
   }
@@ -48,6 +53,24 @@
 
 //768+
 @media screen and (min-width: 768px) {
+  .priorities-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .project {
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+
+  .priorities-items {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+
   .our-priorities-list-icon {
     display: flex;
   }
@@ -65,7 +88,6 @@
   margin-left: auto;
 } */
 
-
 //1200+
 @media screen and (min-width: 1200px) {
   .priorities-items {
@@ -78,16 +100,18 @@
   .our-priorities-icons-container {
     width: 270px;
   }
+
+  .our-priorities-list-icon {
+    display: flex;
+  }
 }
-
-
 
 /* .project {
-  display: flex;
+  display: block;
   align-items: center;
-}
+} */
 
-.priorities-items:not(:last-child) {
+/*.priorities-items:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -100,6 +124,4 @@
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
-}
-
-
+}*/
