@@ -1,0 +1,105 @@
+.text-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 0;
+  margin-bottom: 10px;
+
+  color: var(--title-color);
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin: 0;
+  padding: 0;
+
+  color: var(--link-grey-color);
+}
+
+//480+
+@media screen and (min-width: 480px) {
+  .priorities-items {
+    margin-bottom: 30px;
+  }
+
+  .our-priorities-list-icon {
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .our-priorities-icons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f4fa;
+    width: 450px;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+}
+
+//768+
+@media screen and (min-width: 768px) {
+  .our-priorities-list-icon {
+    display: flex;
+  }
+
+  .our-priorities-icons-container {
+    width: 354px;
+  }
+}
+
+/* .our-priorities-list-icon {
+  display: flex;
+  width: 70px;
+  height: 70px;
+  margin-right: auto;
+  margin-left: auto;
+} */
+
+
+//1200+
+@media screen and (min-width: 1200px) {
+  .priorities-items {
+    margin-bottom: 0;
+  }
+  .priorities-items:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .our-priorities-icons-container {
+    width: 270px;
+  }
+}
+
+
+
+/* .project {
+  display: flex;
+  align-items: center;
+}
+
+.priorities-items:not(:last-child) {
+  margin-right: 30px;
+}
+
+.our-priorities-icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f4fa;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+
