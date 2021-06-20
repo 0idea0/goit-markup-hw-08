@@ -665,7 +665,7 @@ body {
     margin-bottom: 30px;
   }
   .our-priorities-list-icon {
-    display: block;
+    /* display: block; */
     width: 70px;
     height: 70px;
     margin-right: auto;
@@ -688,22 +688,41 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-  }
-  .project {
-    margin-top: -30px;
-    margin-left: -30px;
-  }
-  .priorities-items {
-    flex-basis: calc((100% - 60px) / 2);
-    margin-top: 30px;
-    margin-left: 30px;
   }
   .our-priorities-list-icon {
     display: flex;
   }
   .our-priorities-icons-container {
     width: 354px;
+  }
+  /* .project {
+    margin-top: -30px;
+    margin-left: -30px;
+  } */
+  /* .priorities-items {
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 60px) / 2);
+    outline: 1px solid red;
+  } */
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .priorities-items {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-top: 30px;
+    margin-left: 30px;
+    outline: 1px solid red;
+  }
+  .priorities-container {
+    flex-wrap: wrap;
+  }
+  .project {
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  .letter-height {
+    padding-bottom: 23px;
   }
 }
 
@@ -715,17 +734,29 @@ body {
   margin-left: auto;
 } */
 @media screen and (min-width: 1200px) {
-  .priorities-items {
-    margin-bottom: 0;
+  .project {
+    display: flex;
+    align-items: center;
   }
   .priorities-items:not(:last-child) {
     margin-right: 30px;
   }
   .our-priorities-icons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f4fa;
     width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
   }
   .our-priorities-list-icon {
     display: flex;
+    width: 70px;
+    height: 70px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
