@@ -1,3 +1,22 @@
+//0-767
+@media screen and (max-width: 767px) {
+  .logo-link {
+    margin-right: 0;
+  }
+}
+//768+
+@media screen and (min-width: 768px) {
+  .logo-link {
+    margin-right: 88px;
+  }
+}
+//1200+
+@media screen and (min-width: 1200px) {
+  .logo-link {
+    margin-right: 93px;
+  }
+}
+
 .logo-link {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -5,7 +24,6 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-  margin-right: 93px;
 
   color: #000000;
 }

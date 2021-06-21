@@ -18,12 +18,12 @@
 <body>
     <!--------------Header------------------->
 
-    <!-- <header class="header container">
+    <header class="header container">
         <div class="header__container">
         <nav class="navigation"> 
-            <a class="logo-link" href="./index.html"><span class="logo-link__color">Web</span>Studio</a> -->
+            <a class="logo-link" href="./index.html"><span class="logo-link__color">Web</span>Studio</a>
             <!--------Navigation--------->
-           <!--  <ul class="navigation__list list">
+           <ul class="navigation__list list">
                 <li class="navigation__item">
                     <a class="navigation__link active link" href="">Студия</a>
                 </li>
@@ -31,13 +31,19 @@
                     <a class="navigation__link link" href="./portfolio.html">Портфолио</a>
                 </li>
                 <li class="navigation__item">
-                    <a class="navigation__link link" href="">Контакты</a>
+                    <a class="navigation__link nav-distance link" href="">Контакты</a>
                 </li>
             </ul>
-        </nav> -->
+        </nav>
+        <!-----------------Header-modal-btn (mob)---------->
+        <button type="button" class="header__mobile-menu-btn" data-menu-button>
+            <svg class="header__mobile-menu-icon">
+                <use href="./images/sprite.svg#burger-icon"></use>
+            </svg>
+        </button>
         
             <!------------Contacts---------->
-           <!--  <ul class="contacts list">
+            <ul class="contacts list">
                 <li class="contacts__item">
                     <a class="contacts__mail-link link" href="mailto:info@devstudio.com">
                         <svg class="contacts__envelope-icon">
@@ -56,7 +62,28 @@
                 </li>
             </ul>
         </div>
-    </header> -->
+        <!-------------Mobile menu------------>
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu__container">
+                <button type="button" class="mobile-menu__close-btn" data-menu-close>
+                    <svg class="mobile-menu__close-icon">
+                        <use href="./images/sprite.svg#close-btn"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-menu_nav list">
+                    <li class="mobile-menu__item">
+                        <a href="" class="mobile-menu_link link">Студия</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="" class="mobile-menu_link link">Портфолио</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="" class="mobile-menu_link link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
 
     <main>
         <!-----------Hero section----------->
@@ -471,7 +498,7 @@
             </form>
         </div>
     </div> -->
-
+    <script src="./js/menu.js"></script>
     <!-- <script src="./js/modal.js"></script> -->
 </body>
 </html>
