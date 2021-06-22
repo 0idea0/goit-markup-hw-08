@@ -7,8 +7,8 @@
   margin: 0 auto;
 
   background-color: #c4c4c4;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero-bg.jpg);
+  //background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  //  url(../../images/hero-bg-phone.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -51,3 +51,127 @@
     color: var(--link-white-color);
   }
 }
+
+//480+
+@media screen and (max-width: 767px) {
+  .hero-section {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    max-width: 767px;
+    height: 400px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../images/hero-bg-phone.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: url(../../images/hero-bg-phone@2x.jpg);
+    }
+  }
+
+  .hero-section__title {
+    font-size: 26px;
+    line-height: 1.61;
+  }
+}
+
+//768+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    max-width: 1199px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../images/hero-bg-tablet.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: url(../../images/hero-bg-tablet@2x.jpg);
+    }
+  }
+}
+
+//1200+
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../images/hero-bg-desktop.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: url(../../images/hero-bg-desktop@2x.jpg);
+    }
+  }
+
+  .hero-section__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+/* .hero-section {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+
+  background-color: #c4c4c4;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+/* .hero-section__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--link-white-color);
+} */
+
+/* .hero-section-btn {
+  border-radius: 6px;
+  padding: 10px 32px;
+  display: inline-block;
+  min-width: 200px;
+  border: 1px solid transparent;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  align-items: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  text-align: center;
+
+  background-color: var(--accent-color);
+  color: var(--link-white-color);
+
+  transition: background-color 250ms var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    color: var(--link-white-color);
+  }
+}*/
