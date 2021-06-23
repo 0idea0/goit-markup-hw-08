@@ -1576,7 +1576,6 @@ body {
   display: flex;
   align-items: center;
   min-width: 128px;
-  justify-content: center;
   margin-bottom: 50px;
 }
 
@@ -1591,6 +1590,22 @@ body {
 
 .filter-item:not(:last-child) {
   margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .btn-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .filter-item {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .btn-list {
+    justify-content: center;
+  }
 }
 
 .project-name {
