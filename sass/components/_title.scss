@@ -5,3 +5,9 @@
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
+
+@media screen and (max-width: 1199px) {
+  .title-description {
+    margin-bottom: 30px;
+  }
+}

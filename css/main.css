@@ -51,6 +51,7 @@ ol {
 }
 
 img {
+  width: 100%;
   display: block;
 }
 
@@ -127,11 +128,29 @@ body {
     height: 40px;
     padding: 0;
     line-height: 0;
+    transition: color 250ms var(--transition-timing-function);
+  }
+  .mobile-menu__close-btn:hover, .mobile-menu__close-btn:focus {
+    color: var(--accent-color);
   }
   .mobile-menu__close-icon {
     width: 40px;
     height: 40px;
     fill: #212121;
+  }
+  .mobile-menu__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.19;
+    letter-spacing: 0.02em;
+    color: #212121;
+    transition: color 250ms var(--transition-timing-function);
+  }
+  .mobile-menu__link:hover, .mobile-menu__link:focus {
+    color: var(--accent-color);
+  }
+  .mobile-menu__item {
+    margin-bottom: 32px;
   }
   .is-open {
     opacity: 1;
@@ -548,7 +567,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .subscription-form {
-    width: 450px;
+    width: 100%;
     margin-bottom: 20px;
     margin-right: 0;
   }
@@ -583,6 +602,12 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
+}
+
+@media screen and (max-width: 1199px) {
+  .title-description {
+    margin-bottom: 30px;
+  }
 }
 
 .backdrop {
@@ -799,11 +824,16 @@ body {
     background-color: transparent;
     border: none;
     padding: 0;
+    transition: color 250ms var(--transition-timing-function);
   }
   .header__mobile-menu-icon {
     width: 40px;
     height: 40px;
     fill: #000000;
+    transition: color 250ms var(--transition-timing-function);
+  }
+  .header__mobile-menu-icon:hover, .header__mobile-menu-icon:focus {
+    fill: var(--accent-color);
   }
 }
 
@@ -922,7 +952,7 @@ body {
   .hero-section {
     padding-top: 118px;
     padding-bottom: 118px;
-    max-width: 767px;
+    width: 100%;
     height: 400px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-bg-phone.jpg);
   }
@@ -1421,6 +1451,7 @@ body {
   .clients-items {
     display: flex;
     flex-wrap: nowrap;
+    margin: 0;
   }
   .clients-list-items {
     width: 170px;
@@ -1610,6 +1641,7 @@ body {
 
 .project-name {
   font-family: var(--main-font);
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -1627,7 +1659,6 @@ body {
 }
 
 .project-section {
-  display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -1638,9 +1669,6 @@ body {
 }
 
 .project-item {
-  flex-basis: calc((100% - 90px) / 3);
-  margin-top: 30px;
-  margin-left: 30px;
   cursor: pointer;
   transition: box-shadow 250ms var(--transition-timing-function);
 }
@@ -1685,5 +1713,49 @@ body {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   background-color: var(--link-white-color);
+}
+
+@media screen and (max-width: 767px) {
+  .project-section {
+    display: block;
+  }
+  .project-list {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .project-section-parts {
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .btn-list {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .project-section {
+    display: flex;
+  }
+  .project-item {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  .project-list {
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  .less-distance {
+    padding: 18px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project-item {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+  .project-section-parts {
+    padding: 20px 24px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
