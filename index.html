@@ -65,17 +65,17 @@
         <!-------------Mobile menu------------>
         <div class="mobile-menu" data-menu>
             <div class="container mobile-menu__container">
-                <button type="button" class="mobile-menu__close-btn" >
+                <button type="button" class="mobile-menu__close-btn" data-menu-close >
                     <svg class="mobile-menu__close-icon">
                         <use href="./images/sprite.svg#close-btn"></use>
                     </svg>
                 </button>
-                <ul class="mobile-menu_nav list">
+                <ul class="mobile-menu__nav list">
                     <li class="mobile-menu__item">
-                        <a href="" class="mobile-menu__link link">Студия</a>
+                        <a href="./index.html" class="mobile-menu__link link">Студия</a>
                     </li>
                     <li class="mobile-menu__item">
-                        <a href="" class="mobile-menu__link link">Портфолио</a>
+                        <a href="./portfolio.html" class="mobile-menu__link link">Портфолио</a>
                     </li>
                     <li class="mobile-menu__item">
                         <a href="" class="mobile-menu__link link">Контакты</a>
@@ -83,10 +83,24 @@
                 </ul>
                 <ul class="mobile-menu__contacts list">
                     <li class="mobile-menu__contacts-item">
-                        <a class="mobile-menu__contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+                        <a class="mobile-menu__tel-link link" href="tel:+380961111111">+38 096 111 11 11</a>
                     </li>
                     <li>
-                        <a class="mobile-menu__contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        <a class="mobile-menu__mail-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mobile-menu__social-link-list list">
+                    <li class="mobile-menu__social-link-item">
+                        <a class="mobile-menu__social-link link" href="">Instagram</a>
+                    </li>
+                    <li class="mobile-menu__social-link-item" >
+                        <a class="mobile-menu__social-link link" href="">Twitter</a>
+                    </li>
+                    <li class="mobile-menu__social-link-item">
+                        <a class="mobile-menu__social-link link" href="">Facebook</a>
+                    </li>
+                    <li class="mobile-menu__social-link-item">
+                        <a class="mobile-menu__social-link link" href="">LinkedIn</a>
                     </li>
                 </ul>
             </div>
@@ -155,19 +169,31 @@
                 <h2 class="title-description">Чем мы занимаемся</h2> 
                 <ul class="work-items list">
                     <li class="work-img">
-                        <img src="images/box-1.jpg" alt="Верстка сайта" width="370" height="294">
+                        <picture class="picture">
+                            <source srcset="./images/box-1-desktop.jpg 1x, ./images/box-1-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+
+                            <img src="./images/box-1-desktop.jpg" alt="Верстка сайта">
+                        </picture>
                     <div class="work-image-color">
                         <p class="work-img-description">Десктопные приложения</p>
                     </div>
                     </li>
                     <li class="work-img">
-                        <img src="images/box-2.jpg" alt="Разработка дизайна сайта" width="370" height="294">
+                        <picture class="picture">
+                            <source srcset="./images/box-2-desktop.jpg 1x, ./images/box-2-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                        
+                            <img src="./images/box-2-desktop.jpg" alt="Разработка дизайна сайта">
+                        </picture>
                         <div class="work-image-color">
                             <p class="work-img-description">Мобильные приложения</p>
                         </div>
                     </li>
                     <li class="work-img">
-                        <img src="images/box-3.jpg" alt="Выбор цвета для фона сайта" width="370" height="294">
+                        <picture class="picture">
+                            <source srcset="./images/box-3-desktop.jpg 1x, ./images/box-3-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                        
+                            <img src="./images/box-3-desktop.jpg" alt="Выбор цвета для фона сайта">
+                        </picture>
                         <div class="work-image-color">
                             <p class="work-img-description">Дизайнерские решения</p>
                         </div>
@@ -481,7 +507,7 @@
        </div>
     </footer>
 
-   <!--<div class="backdrop is-hidden " data-modal>
+   <div class="backdrop is-hidden " data-modal>
         <div class="modal">
             <button class="modal-close-btn" data-modal-close>
                 <svg class="modal-btn">
@@ -528,8 +554,8 @@
                 <button type="submit" class="modal-form-btn">Отправить</button>
             </form>
         </div>
-    </div>-->
+    </div>
     <script src="./js/menu.js"></script>
-<!--<script src="./js/modal.js"></script>-->
+<script src="./js/modal.js"></script>
 </body>
 </html>
