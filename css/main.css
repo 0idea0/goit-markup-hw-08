@@ -106,11 +106,19 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: bisque;
+    background: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
     overflow: auto;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    z-index: 1;
+  }
+  .mobile-menu__nav {
+    margin-bottom: 302px;
+  }
+  .mobile-menu__contacts {
+    margin-bottom: 64px;
   }
   .mobile-menu__container {
     position: relative;
@@ -128,10 +136,11 @@ body {
     height: 40px;
     padding: 0;
     line-height: 0;
-    transition: color 250ms var(--transition-timing-function);
+    fill: #212121;
+    transition: fill 250ms var(--transition-timing-function);
   }
   .mobile-menu__close-btn:hover, .mobile-menu__close-btn:focus {
-    color: var(--accent-color);
+    fill: var(--accent-color);
   }
   .mobile-menu__close-icon {
     width: 40px;
@@ -149,8 +158,47 @@ body {
   .mobile-menu__link:hover, .mobile-menu__link:focus {
     color: var(--accent-color);
   }
+  .mobile-menu__tel-link {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
+  .mobile-menu__mail-link {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
   .mobile-menu__item {
     margin-bottom: 32px;
+  }
+  .mobile-menu__contacts-item {
+    margin-bottom: 30px;
+  }
+  .mobile-menu__social-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
+  .mobile-menu__social-link-list {
+    display: flex;
+    justify-content: center;
+  }
+  .mobile-menu__social-link-item {
+    display: flex;
+    justify-content: space-between;
+  }
+  .mobile-menu__social-link-item:not(:first-child) {
+    padding-left: 10px;
+    border-left: 1px solid rgba(33, 33, 33, 0.2);
+  }
+  .mobile-menu__social-link-item:not(:last-child) {
+    padding-right: 10px;
   }
   .is-open {
     opacity: 1;
@@ -621,11 +669,17 @@ body {
   transition: opacity 250ms var(--transition-timing-function), visibility 250ms var(--transition-timing-function);
 }
 
-/* .is-hidden {
+/* @media screen and (max-width: 767px) {
+  .backdrop {
+    max-width: 767px;
+  }
+} */
+.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-} */
+}
+
 .modal {
   position: absolute;
   top: 50%;
@@ -661,6 +715,13 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: transparent;
   cursor: pointer;
+}
+
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .modal-form-title {

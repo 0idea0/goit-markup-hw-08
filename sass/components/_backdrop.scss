@@ -11,8 +11,14 @@
     visibility 250ms var(--transition-timing-function);
 }
 
-/* .is-hidden {
+/* @media screen and (max-width: 767px) {
+  .backdrop {
+    max-width: 767px;
+  }
+} */
+
+.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-} */
+}
