@@ -2083,9 +2083,12 @@ body {
   .btn-list {
     margin-bottom: 40px;
   }
+  .overlay {
+    height: 100%;
+  }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .project-section {
     display: -webkit-box;
     display: -ms-flexbox;
