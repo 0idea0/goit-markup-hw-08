@@ -14,19 +14,25 @@
     pointer-events: none;
     z-index: 1;
 
-    &__nav {
-      margin-bottom: 302px;
-    }
-
     &__contacts {
       margin-bottom: 64px;
     }
 
     &__container {
       position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       padding-left: 25px;
       padding-top: 48px;
       padding-bottom: 48px;
+      height: 100%;
+    }
+
+    &__contacts-container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
     }
 
     &__close-btn {
@@ -109,7 +115,6 @@
 
     &__social-link-list {
       display: flex;
-      justify-content: center;
     }
 
     &__social-link-item {

@@ -73,6 +73,13 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .text-title {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 //768+
 @media screen and (min-width: 768px) {
   .priorities-container {
