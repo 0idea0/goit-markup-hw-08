@@ -157,3 +157,15 @@
     -radius: 4px;
   }
 }
+
+@media screen and (max-width: 1199px) {
+  .modal-form-checkbox-policy {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+
+  .modal-form-policy-link {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
